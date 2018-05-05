@@ -31,8 +31,9 @@ var characters = [{
 app.get("/", function(req, res) {
   res.send("Welcome to the Star Wars Page!");
 });
-
+      // : lets express anything after it will be a parameter, and we can access it by .notation
 app.get("/:characters", function(req, res) {
+  //this vari able is a one big objects with objects nested within
   var chosen = req.params.characters;
 
   // What does this log?
